@@ -93,3 +93,114 @@ I'm a responsible leader with passions for software development and creative cod
 * Wrote a 13-page chapter w/practice Qs, solutions on number theory and collaborated with Olympiad math community
 
 ***
+
+## Code Example
+
+Codeforces Round 190 (Div. 1) - [Task E. Ciel and Gondolas.](https://codeforces.com/problemset/problem/321/E?locale=en)
+
+``` C++
+#include <bits/stdc++.h>
+#define pb push_back
+#define sz(v) (int)v.size()
+#define in insert
+#define ld double
+#define all(v) v.begin(),v.end()
+#define ent "\n"
+#define S second
+#define F first
+//#define int long long
+#define pii pair <int, int>
+
+/*#pragma GCC optimize("O3")
+#pragma GCC optimize("O2,unroll-loops")
+#pragma GCC target("avx,avx2")*/
+
+using namespace std;
+
+//const int INF = 1e18;
+const int N = 3e5+123;
+const int MAX = 5e4;
+const int mod = 1e9+7;
+const double PI = 3.1415926536;
+const int B = 260;
+
+const double eps = 1e-20;
+
+//mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());
+
+void speed(){
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+}
+
+int dx[4] = {-1, 0, 0, 1};
+int dy[4] = {0, -1, 1, 0};
+
+int n,k;
+int dp[4010][810];
+int a[4010][4010];
+
+int get(int l, int r){
+    return (a[r][r]-a[r][l-1]-a[l-1][r]+a[l-1][l-1])/2;
+}
+
+void calc(int L, int R, int opt_L, int opt_R, int K){
+    if(L > R) return;
+    int mid = (L+R)/2;
+    int res = mod;
+    int opt_pos;
+
+    for(int i = opt_L; i <= opt_R; ++i){
+        if(dp[i-1][K-1] + get(i, mid) < res){
+            res = dp[i-1][K-1] + get(i, mid);
+            opt_pos = i;
+        }
+    }
+
+    dp[mid][K] = res;
+    calc(L, mid-1, opt_L, opt_pos, K);
+    calc(mid+1, R, opt_pos, opt_R, K);
+}
+
+void solve() {
+    cin >> n >> k;
+    for(int i = 1; i <= n; ++i){
+        for(int j = 1; j <= n; ++j){
+            cin >> a[i][j];
+            a[i][j] += a[i-1][j]+a[i][j-1]-a[i-1][j-1];
+        }
+    }
+
+    for(int i = 1; i <= n; ++i){
+        dp[i][1] = get(1, i);
+    }
+
+    for(int i = 2; i <= k; ++i){
+        calc(1,n,1,n,i);
+    }
+
+    cout << dp[n][k];
+}
+
+signed main() {
+    speed();
+    int tt = 1;
+    //cin >> tt;
+    while(tt --){
+        solve();
+        cout << ent;
+    }
+}
+```
+
+***
+
+## Skills
+
+* Designing apps in Figma
+* Operating with servers and SQL databases
+* HTML and CSS development skills
+* Object oriented programming in Java
+* Back-End development on Nest.JS
+* C++ advanced competitive programming skills
