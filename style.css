@@ -71,6 +71,13 @@ body {
 
 .image {
     border-radius: 50%;
+    width: 20%;
+    height: 20%;
+}
+
+.image-rss {
+    width: 8.5vw;
+    height: 3vw;
 }
 
 .highlight {
@@ -168,8 +175,7 @@ body {
 
 .footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     color: var(--highlight-color);
 }
