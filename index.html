@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatarinov Daniil - CV</title>
+    <link rel="icon" href="images/ISO_C++_Logo.svg.png" />
     <link href="style.css" rel="stylesheet">
     <link href="docs/prism.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="avatar">
-            <img src="images/1708682474156.jpeg" alt="avatar" width="20%" height="20%" class="image">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about-me" class="nav-item nav-text">About me</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#code-example" class="nav-item">Code</a></li>
+                <li><a href="#projects" class="nav-item">Projects/Activities</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+                <li><a href="#education" class="nav-item">Education</a></li>
+            </ul>
+        </nav>
+        <div class="avatar" id="about-me">
+            <img src="images/1708682474156.jpeg" alt="Daniil" width="220" height="220" class="image">
             <div class="top">
                 <div class="name highlight">Tatarinov Daniil</div>
                 <div class="work highlight">Junior Full-Stack Developer</div>
                 <div class="about-me">I’m a responsible leader with passions for software development and creative coding problem-solving who believes that connecting communities diversifies mindsets and creates progress.</div>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <p><span class="highlight">E-mail:</span> danil.tatarinov.00@gmail.com &#10022;
                 <span class="highlight">Telephone number:</span> +77776198227 &#10022;
                 <span class="highlight">Telegram:</span> @DanTatar &#10022;
@@ -30,7 +41,7 @@
         </div>
     </header>
 
-    <div class="education">
+    <div class="education" id="education">
         <div class="highlight h2-text">Education</div>
         <hr class="line1">
         <div class="edu-unit">
@@ -77,7 +88,7 @@
         </ul>
     </div>
 
-    <div class="activities">
+    <div class="activities" id="projects">
         <div class="highlight h2-text">Experience/Extracurricular Activities</div>
         <hr class="line1">
         <div class="edu-unit">
@@ -189,7 +200,7 @@
         </div>
     </div>
 
-    <div class="code-example">
+    <div class="code-example" id="code-example">
         <div class="highlight h2-text">Code Example</div>
         <hr class="line1">
         <p>Codeforces Round 190 (Div. 1) - <a href="https://codeforces.com/problemset/problem/321/E?locale=en" class="link">Task E. Ciel and Gondolas.</a></p>
@@ -290,7 +301,7 @@ signed main() {
         </pre>
     </div>
 
-    <div class="skills">
+    <div class="skills" id="skills">
         <div class="highlight h2-text">Skills</div>
         <hr class="line1">
         <div class="skills-content">
@@ -363,7 +374,11 @@ signed main() {
             </div>
         </div>
     </div>
-
+    <footer class="footer">
+        <div>&#169; 2024 by Tatarinov Daniil</div>
+        <a href="https://github.com/idkwhttsay" class="link">GitHub</a>
+        <a href="https://rs.school/courses/javascript-ru"><img src="images/logo-rsschool3.png" alt="RSSchool" width="86" height="32"></a>
+    </footer>
     <script src="docs/prism.js"></script>
 </body>
 </html>
