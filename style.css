@@ -1,0 +1,109 @@
+:root {
+    --highlight-color: #00367B;
+    --text-color: #000000;
+    --url-color: #6ca1e7;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1% 15%;
+    color: var(--text-color);
+    font-size: 1.0vw;
+}
+
+.image {
+    border-radius: 50%;
+}
+
+.highlight {
+    font-style: italic;
+    color: var(--highlight-color);
+}
+
+.h2-text {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.h3-text {
+    font-weight: bold;
+    font-size: 1.17em;
+}
+
+.location-time {
+    display: flex;
+    flex-direction: row;
+}
+
+.line1 {
+    border-top: 2px solid var(--highlight-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--url-color);
+}
+
+.contact {
+    text-align: center;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    flex: 1;
+}
+
+.work {
+    flex: 1;
+}
+
+.edu-unit {
+    margin: 1% 0% 1% 5%
+}
+
+.role-time {
+    display: flex;
+    flex-direction: row;
+}
+
+.company {
+    color: var(--url-color);
+    font-style: italic;
+    text-decoration: none;
+}
+
+.ul-list {
+    line-height: 150%;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-unit {
+    border: 0.2vw solid var(--text-color);
+    color: var(--highlight-color);
+    font-size: 1.3em;
+    font-style: italic;
+    margin: 0.5vw;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
