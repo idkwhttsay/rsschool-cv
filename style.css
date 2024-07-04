@@ -11,6 +11,35 @@ body {
     font-size: 1.0vw;
 }
 
+.mid-font {
+    font-size: 0.9em;
+}
+
+.small-font {
+    font-size: 0.5em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.left {
+    font-style: italic;
+    width: 50%;
+    text-align: left;
+}
+
+.left-no-italic {
+    width: 50%;
+    text-align: left;
+}
+
+.right {
+    font-style: italic;
+    width: 50%;
+    text-align: right;
+}
+
 .image {
     border-radius: 50%;
 }
