@@ -1,0 +1,181 @@
+:root {
+    --highlight-color: #00367B;
+    --text-color: #000000;
+    --url-color: #6ca1e7;
+    --background: aliceblue;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0% 15%;
+    color: var(--text-color);
+    font-size: 1.0vw;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2%;
+    background-color: var(--background);
+    height: 3vw;
+    align-items: center;
+}
+
+.nav {
+    margin: 0% 0% 2% 0%;
+    background-color: var(--background);
+}
+
+.nav-item {
+    color: var(--highlight-color);
+    height: 3vw;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-text {
+    color: var(--highlight-color);
+}
+
+.mid-font {
+    font-size: 0.9em;
+}
+
+.small-font {
+    font-size: 0.5em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.left {
+    font-style: italic;
+    width: 50%;
+    text-align: left;
+}
+
+.left-no-italic {
+    width: 50%;
+    text-align: left;
+}
+
+.right {
+    font-style: italic;
+    width: 50%;
+    text-align: right;
+}
+
+.image {
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+}
+
+.image-rss {
+    width: 8.5vw;
+    height: 3vw;
+}
+
+.highlight {
+    font-style: italic;
+    color: var(--highlight-color);
+}
+
+.h2-text {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.h3-text {
+    font-weight: bold;
+    font-size: 1.17em;
+}
+
+.location-time {
+    display: flex;
+    flex-direction: row;
+}
+
+.line1 {
+    border-top: 2px solid var(--highlight-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--url-color);
+}
+
+.contact {
+    text-align: center;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    flex: 1;
+}
+
+.work {
+    flex: 1;
+}
+
+.edu-unit {
+    margin: 1% 0% 1% 5%
+}
+
+.role-time {
+    display: flex;
+    flex-direction: row;
+}
+
+.company {
+    color: var(--url-color);
+    font-style: italic;
+    text-decoration: none;
+}
+
+.ul-list {
+    line-height: 150%;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-unit {
+    border: 0.2vw solid var(--text-color);
+    color: var(--highlight-color);
+    font-size: 1.3em;
+    font-style: italic;
+    margin: 0.5vw;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--highlight-color);
+}
